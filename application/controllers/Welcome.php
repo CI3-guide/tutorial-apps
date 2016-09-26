@@ -20,17 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		echo "hello world!";
+		echo "<h1>hello world!</h1>";
 		$this->load->view('welcome_message');
-	}
-
-	public function detail()
-	{
-
-		$data = [
-			"name" => "山田太郎",
-			"pref"   => "東京都",
-		];
-		$this->load->view('user_detail',$data);
 	}
 }

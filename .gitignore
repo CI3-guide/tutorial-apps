@@ -18,7 +18,7 @@ application/helpers/
 application/hooks/
 application/language/
 application/libraries/
-application/models/
+application/models/index.html
 application/third_party/
 application/.htaccess/
 application/views/errors/

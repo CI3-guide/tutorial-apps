@@ -19,10 +19,4 @@ class Task extends CI_Controller
         $data["task_list"] = $this->task_model->get_task_list();
         $this->load->view("task/index",$data);
     }
-
-    public function detail()
-    {
-        $data = [];
-        $data["arry_code"] = [];
-    }
 }
