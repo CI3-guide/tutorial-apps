@@ -34,11 +34,11 @@
         <tbody>
         <tr>
             <th>氏名</th>
-            <td><?php if(isset($name)):echo $name;endif;?></td>
+            <td><?php if(isset($name)){ echo $name; }?></td>
         </tr>
         <tr>
             <th>都道府県</th>
-            <td><?php if(isset($pref)):echo $pref;endif;?></td>
+            <td><?php if(isset($pref)){ echo $pref; }?></td>
         </tr>
         </tbody>
     </table>

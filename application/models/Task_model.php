@@ -7,7 +7,7 @@ class Task_model extends CI_Model
         $this->load->database();
     }
 
-    public function get_task_list()
+    public function lists()
     {
         $per_page = 10; // 1ページあたりの表示数
         $query = $this->db->get("task", $per_page);
@@ -15,7 +15,7 @@ class Task_model extends CI_Model
         return $result;
     }
 
-    public function create_task($task)
+    public function create($task)
     {
         $data = ["task_name" => $task];
         $this->db->insert('tasks', $data);
