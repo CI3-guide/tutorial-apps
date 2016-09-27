@@ -18,6 +18,6 @@ class Task_model extends CI_Model
     public function create($task)
     {
         $data = ["task_name" => $task];
-        $this->db->insert('tasks', $data);
+        $this->db->insert('task', $data);
     }
 }

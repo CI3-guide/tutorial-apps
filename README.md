@@ -8,7 +8,7 @@ Controller,Modelはチュートリアル終了地点でのファイルで、確�
 ViewとSQLはチュートリアルで使用します。
 
 
-    sample-apps/
+    tutorial-apps/
     ├── application/
     │   ├── controllers/　…　確認ファイル
     │   ├── models/　…　確認ファイル

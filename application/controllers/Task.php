@@ -9,7 +9,7 @@ class Task extends CI_Controller
         $this->load->library("form_validation");
 
         if($this->input->post()){
-            $this->form_validation->set_rules('task', 'タスク', "required|max_length[5]|max_length[20]");
+            $this->form_validation->set_rules('task', 'タスク', "required|min_length[5]|max_length[20]");
 
             if ($this->form_validation->run()) {
                 $this->task_model->create($this->input->post("task"));
