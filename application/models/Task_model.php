@@ -11,8 +11,11 @@ class Task_model extends CI_Model
     {
         $per_page = 10; // 1ページあたりの表示数
         $query = $this->db->get("task", $per_page);
-        $result = $query->result_array();
-        return $result;
+        if ($query->num_rows() > 0){
+            return $query->result_array();
+        }else{
+            return [];
+        }
     }
 
     public function create($task)
