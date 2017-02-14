@@ -10,8 +10,8 @@ class User extends CI_Controller
     {
 
         $data = [
-            "name" => "山田太郎",
-            "pref"   => "東京都",
+            'name' => '山田太郎',
+            'pref'   => '東京都',
         ];
         $this->load->view('tutorial/user_detail',$data);
     }
@@ -20,7 +20,7 @@ class User extends CI_Controller
     {
         $this->load->helper('url');
         echo site_url();
-        echo auto_link("googleのurlは、https://google.comです");
+        echo auto_link('googleのurlは、https://google.comです');
 	}
 
     public function agent()
