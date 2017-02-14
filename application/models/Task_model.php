@@ -9,7 +9,7 @@ class Task_model extends CI_Model
 
     public function lists()
     {
-        $per_page = 10; // 1ページあたりの表示数
+        $per_page = 10; // 表示数
         $query = $this->db->get('task', $per_page);
         if ($query->num_rows() > 0){
             return $query->result_array();
